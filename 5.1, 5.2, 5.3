@@ -1,0 +1,61 @@
+5.1 Assignment -- While ("Budget Analysis") as Sentinel
+
+# budget of a user
+budget = int(input('Enter the budget of the month: '))
+another = 'y'  # Have to add a variable?
+total = 0.0
+# Process one or more expenses
+while another == 'y' or another == 'Y':
+    # expenses
+    expenses = float(input('Enter the expenses: '))
+    total += expenses
+   
+    another = input('Do you have another expenses? ' +
+                    '(Enter y for yes, enter n for no): ')
+    break
+if total > budget:
+    print(f'You are ${total - budget} over the budget ')
+elif total == budget:
+    print(f'Your budget is enough for expenses!')
+else:
+    print(f'You are ${total - budget} under the budget ')
+
+print(f'Total: ${total}')
+
+
+
+
+
+5.2 Assignment - Budget Analysis - while loop with break
+
+# budget of a user
+budget = int(input('Enter the budget of the month: '))
+another = 'y'  # Have to add a variable?
+total = 0.0
+# Process one or more expenses
+while another == 'y' or another == 'Y':
+    # expenses
+    expenses = float(input('Enter the expenses: '))
+    total += expenses
+    # again
+    another = input('Do you have another expenses? ' +
+                    '(Enter y for yes, enter 0 for no): ')
+while True: 
+  another == 0
+  break
+if total > budget:
+    print(f'You are ${total - budget} over the budget ')
+elif total == budget:
+    print(f'Your budget is enough for expenses!')
+else:
+    print(f'You are ${total - budget} under the budget ')
+
+print(f'Total: ${total}')
+
+
+
+
+
+5.3. Assignment continue and break (an exercise)
+
+(could not complete)
