@@ -1,0 +1,19 @@
+2# Solve 4.4 (Distance Traveled problem - Page 269 -Problem 4) using the "for and range" statements
+speed = int(input("Enter the speed: "))
+
+hour = int(input("Enter the hour: "))
+
+for i in range(1, hour + 1):
+
+   distance = speed * i
+
+   print("The distance traveled after " + str(i) + " hour(s): " + str(distance))
+   
+   # Solve 4.6 (Celsius to Fahrenheit Table - Page 270 - Problem 7) Using the "for and range" statements.
+tempInCelsius = float(input("Enter the temperatures in Celsius : "))
+celsiusToFahrenheit = (( (9 / 5 ) * tempInCelsius ) + 32 )
+print("temperature converted to Fahrenheit is :",celsiusToFahrenheit)
+
+'''
+I wasn't sure how to solve 6.2 using for and range statements so I just solved the problem normaly. Also for 6.1 i'm not sure if how I did it is technically using for and range statemments, but I still tried to incorperwate them into the code somehow.
+'''
