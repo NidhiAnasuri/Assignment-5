@@ -1,0 +1,82 @@
+#This is a redo of assignment 5
+#5.1
+# budget of a user
+budget = int(input('Enter the budget of the month: '))
+another = 'y'  # Have to add a variable?
+total = 0.0
+
+# Process one or more expenses
+while:
+  expense > 0
+  break
+  while another == 'y' or another == 'Y':
+    # expenses
+    expense = float(input('Enter the expense: '))
+    total += expense
+
+expense >= 1
+
+if total > budget:
+  print(f'You are ${total - budget} over the budget ')
+
+elif total == budget:
+  print(f'Your budget is enough for expense!')
+else:
+  print(f'You are ${total - budget} under the budget ')
+
+print(f'Total: ${total}')
+
+#5.2
+# budget of a user
+budget = int(input('Enter the budget of the month: '))
+another = "y"
+total = 0.0
+expenses = float(input('Enter the expenses: '))
+total += expenses
+while True:
+  expenses == 0
+  break
+
+if total > budget:
+    print(f'You are ${total - budget} over the budget ')
+elif total == budget:
+    print(f'Your budget is enough for expenses!')
+else:
+    print(f'You are ${total - budget} under the budget ')
+
+print(f'Total: ${total}')
+
+#5.3
+print('Enter a couple of positive numbers (or “quit” to stop):')
+print('Note that all negative numbers and 0s will be ignored.')
+
+total = 0
+min = -1
+max = -1 
+
+while True:
+    number = input()
+
+    if (number == 'q'):
+        break
+
+    number = int(number)
+
+    if (number <= 0):
+        continue
+
+    total = total + number
+
+    if (max == -1):
+        max = number
+    elif (number > max):
+        max = number
+
+    if (min == -1):
+        min = number
+    elif (number < min):
+        min = number
+
+print('Minimum = ', min)
+print('Maximum = ', max)
+print('Sum = ', total)
